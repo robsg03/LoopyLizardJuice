@@ -5,11 +5,11 @@ import random
 user_action = input("Enter Rock, Paper, or Scissors: ")
 possible_action = ['rock', 'paper', 'scissors']
 cpu_action = random.choice(possible_action)
-print('You chose ' + user_action + '. Computer chose ' + cpu_action)
+print(f'You chose {user_action}. Computer chose {cpu_action}.')
 
 if user_action.lower() == cpu_action:
     print("Draw. Try again.")
-elif user_action.lower == 'rock':
+elif user_action.lower() == 'rock':
     if cpu_action == 'scissors':
         print("Rock Smashes scissors. You Win!")
     else:
@@ -25,4 +25,5 @@ elif user_action.lower() == 'paper':
     if cpu_action == 'rock':
         print("Paper covers rock. You Win!")
     else:
+
         print('Scissors shreds paper. You lose!')
